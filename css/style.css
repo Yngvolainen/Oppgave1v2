@@ -1,0 +1,147 @@
+html {
+    background-image: url(../assets/so-white.png);
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+    color: aquamarine;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Audiowide', cursive;
+}
+
+.wrapper {
+    width: 80vw;
+    margin: 1rem auto;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem; */
+    padding: 1rem;
+    ;
+    
+}
+
+.nav-bar {
+    width: 100%;
+    background-image: url(../assets/cork-board.png);
+    display: inline-block;
+}
+
+.nav-logo {
+    display: inline-block;
+    /* grid-column: 1/2; */
+    height: 50px;
+    width: 50px;
+    background: cornsilk;
+}
+.nav-menu {
+    display: inline-block;
+    margin-left: auto;
+    /* grid-column: 2/4;
+    align-content: stretch; */
+}
+
+.nav-menu li {
+    
+    display: inline-block;
+    /* padding: 0.5rem; */
+    /* margin: 0.5rem 0.5rem 0.5rem auto; */
+}
+
+.nav-menu li:last-of-type {
+    margin-right: 1%;
+}
+
+.header {
+    /* display: block; */
+    /* grid-column: 1/4; */
+    background-image: url(../assets/hero.png);
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+}
+
+.header h1 {
+    position: relative;
+    top: 10%;
+    right: 10%;
+}
+
+.header h2 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.card-header {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    text-align: center;
+    color: #000000;
+}
+
+.card-items {
+    text-align: center;
+    font-family: 'Audiowide';
+    font-size: 2rem;
+    color: aqua;
+    border: solid medium maroon;
+    border-radius: 1rem;
+    height: 25vh;
+    margin: 1vw;
+    padding: 1rem;
+    
+}
+
+
+.card1 {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    background-image: url(../assets/lada_640.jpg);
+    background-size: cover;
+}
+.card2 {
+    grid-column: 3/6;
+    grid-row: 3/5;
+    background-image: url(../assets/amiga_640.jpg);
+    background-size: cover;
+}
+.card3 {
+    grid-column: 5/8;
+    grid-row: 4/6;
+    background-image: url(../assets/cassette_640.jpg);
+    background-size: cover;
+}
+
+.footer {
+    background: chartreuse;
+    grid-column: 1/4;
+}
+
+.level-up {
+    position: fixed;
+    bottom: -20px;
+    left: 3%;
+    width: 4vw;
+    
+    
+}

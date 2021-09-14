@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/formstyle.css">
-    <title>Meld deg inn i Partiet</title>
+    <title>Meld deg inn i Skogpartiet</title>
 </head>
 <body>
-    <div class="header"><h1>Vennligst fyll ut skjemaene for å bli med i politikken</h1></div>
+    
+        
+    <h1>Fyll inn plz</h1>
+    <br>
+    <form>
+    <p>Dyronalia</p>
+    
+        <label for="fname">Fornavn:</label>
+        <br>
+        <input type="text" id="fornavn" name="fornavn">
+        <br>
+        <label for="lname">Etternavn:</label>
+        <br>
+        <input type="text" id="etternavn" name="etternavn">
+
+
+    <p>Hvilken art tilhører du</p>
+
+  
+        <input type="radio" id="html" name="art" value="elg">
+        <label for="html">Elg</label>
+        <br>
+        <input type="radio" id="bjørn" name="art" value="bjørn">
+        <label for="bjørn">Bjørn</label>
+        <br>
+        <input type="radio" id="javascript" name="art" value="ulv">
+        <label for="ulv">Ulv</label>
+        <br>
+        <input type="radio" id="mindre" name="art" value="midre" disabled>
+        <label for="mindre">Mindre viktig art</label>
+    </form>
+
 </body>
 </html>

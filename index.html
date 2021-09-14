@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Det Politiske Partiet</title>
@@ -11,57 +12,75 @@
 <body>
     <div class="wrapper">
 
-        <section class="navigation">
-            <div class="nav-logo"><img src="assets/logo.png" alt="Logo"></div>
-            <span class="nav-menu">
+        <section id="top" class="navigation">
+            <div class="nav-logo"><img src="assets/leaf-logo.png" alt="Logo"></div>
+            <div class="nav-menu">
                 <ul>
-                    <li><a href="https://nn.wikipedia.org/wiki/Politikk" target="_blank"><h3>Politikk</h3></a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Politics" target="_blank"><h3>Mere Politikk!</h3></a></li>
-                    <li><a href="forms.html" target="_blank"><h3>Bli Med</h3></a></li>
+                    <li><a href="#hvem"><h3>Hvem</h3></a></li>
+                    <li><a href="#hva"><h3>Hva</h3></a></li>
+                    <li><a href="#hvor"><h3>Hvor</h3></a></li>
+                    <li><a href="forms.html" target="_blank"><h3>Meld deg inn</h3></a></li>
                 </ul>
-            </span>  
+            </div>  
         </section>
         
         <section class="header">
-            <h1>POLITIKK-<br>PARTIET</h1>
-            <h2>Vi må jo ha politikk! 🤪</h2>
+            <div class="header-text">
+                <h1>Skog&#8203;partiet</h1>
+                <h2>"Inn i granskauen" ™</h2>
+            </div>
+        </section>
+        
+        <section id="hvem" class="leader">
+            <div class="leader-text">
+                <h2>Bli kjent med partilederen og/eller Kongen vår</h2>
+            </div>
+            <div class="leader-image">
+                <a href="https://no.wikipedia.org/wiki/Elg" target="_blank"><img src="/assets/elg.jpeg" alt="En elg, skogens konge"></a>
+            </div>
+        </section>
+
+        <section id="hva" class="cards">
+            <h2 class="card-header">Våre kjerneverdier</h2>
+            <div class="card-items card1"><h2>KONGLER</h2></div>
+            <div class="card-items card2"><h2>SOPP</h2></div>
+            <div class="card-items card3"><h2>BARK</h2></div>
+        </section>
+          
+        
+        <section id="hvor" class="footer">
+            
+            <div class="feet left-foot">
+                <h3>Link til:</h3>
+                <h4>hvem</h4>
+                <h4>hva</h4>
+                <h4>hvor</h4>
+                <h4>BLI MED</h4>
+            </div>
+
+            <div class="feet middle-foot">
+
+            </div>
+            
+            <div class="feet right-foot">
+                <h3>Følg oss</h3>
+                <a href=""><img src="assets/reddit-icon.svg" alt="reddit"></a>
+                <img src="assets/facebook-icon.svg" alt="facebook">
+                <img src="assets/twitter-icon.svg" alt="twitter">
+                <img src="assets/youtube-icon.svg" alt="youtube">
+                
+            </div>
+            
         </section>
         
         <section class="agenda">
-            <h2>FORUMET KORKTAVLA ®</h2>
-        </section>
-
-        <section class="cards">
-            <h2 class="card-header">TING SOM VAR BEDRE FØR</h2>
-            <div class="card-items card1">BILER</div>
-            <div class="card-items card2">DATA&#8203;MASKINER</div>
-            <div class="card-items card3">FYSISKE &#8203;MEDIER</div>
+            <h2>Forumet "Korktavla®" kommer snart!</h2>
         </section>
         
-        <section class="footer">
-
-            <div class="left-foot">
-                <h3>LINKER</h3>
-                <h5>POLITIKK</h5>
-                <h5>MERE POLITIKK!</h5>
-                <h5>BLI MED</h5>
-            </div>
-
-            <div class="right-foot">
-                <h3>SOSIALE MEDIER</h3>
-                <img src="assets/reddit-logo.png" alt="reddit">
-                <img src="assets/fb-logo.png" alt="facebook">
-                <img src="assets/twitter-logo.png" alt="twitter">
-
-            </div>
-
-        </section>
-
-
 
     </div>
     <div class="level-up">
-        <a href="#https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/level-up.svg" alt=""></a>
+        <a href="#top"><img src="assets/level-up.svg" alt=""></a>
     </div>
 </body>
 </html>

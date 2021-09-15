@@ -1,0 +1,42 @@
+body {
+    font-size: larger;
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+header {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+}
+
+legend {
+    text-align: center;
+}
+
+.left {
+    grid-column: 1 / 2;
+    background-image: url(../assets/nature-red.jpg);
+    /* background-attachment: cover; */
+    
+    
+}
+
+.left img {
+    /* width: 100%; */
+}
+
+.wrapper{
+    /* background-image: url(../assets/so-white.png); */
+    grid-column: 2 / 3;
+    margin: 2rem auto; 
+}
+.right {
+    grid-column: 3 / 4;
+    background-image: url(../assets/nature-green.jpg);
+    
+    
+}

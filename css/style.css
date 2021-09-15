@@ -1,7 +1,7 @@
 html {
     
     font-family: 'Merriweather',monospace, serif;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 h1, h2, h3 {
@@ -93,7 +93,7 @@ h3 {
 
 .header {
     position: relative;
-    height: 50vh;
+    height: 75vh;
     background-image: url(../assets/nature-red.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -101,7 +101,7 @@ h3 {
 }
 
 .header-text {
-    background: rgba(0, 0, 0, 0.500);
+    background: rgba(0, 0, 0, 0.700);
     min-width: 320px;
     /* max-width: 370px; */
     position: absolute;
@@ -209,16 +209,30 @@ h3 {
     background-size: cover;
 }
 
-.agenda {
-    background-image: url(../assets/cork-board.png);
+.issues {
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 1rem;
+    /* color: black; */
+    justify-content: space-between;
 }
 
+.issues h2 {
+    color: black;
+    text-align: center;
+}
+
+
+
 .footer {
-    background-image:url(../assets/nature-green.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    /* background-image:url(../assets/nature-green.jpg); */
+    /* background-size: cover;
+    background-attachment: fixed; */
+    background:rgb(0, 128, 0);
     padding: 3rem;
-    height: 75vh;
+    margin-top: 2rem;
+    height: min-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
@@ -229,8 +243,10 @@ h3 {
 .feet {
     height: 90%;
     color: var(--text-dark);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -248,15 +264,23 @@ h3 {
     
 }
 
-.right-foot a {
-    /* display: block;  */
-    padding: 1rem;
+.right-foot img {
+    width: 3rem;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* padding: 0.2rem; */
 }
 
+/* .bottom-logo {
+    margin: 2rem auto;
+} */
 
+.agenda {
+    background-image: url(../assets/cork-board.png);
+}
 
 .level-up {
-    position: fixed;
+    position: absolute;
     bottom: -20px;
     margin: 0 auto;
     left: 3%;

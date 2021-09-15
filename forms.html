@@ -3,42 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/formstyle.css">
     <title>Meld deg inn i Skogpartiet</title>
 </head>
 <body>
+    <div class="left">
+        <img src="/assets/nature-red.jpg" alt="">
+    </div>
+    <div class="right">
+        <!-- <img src="/assets/nature-red.jpg" alt=""> -->
+    </div>
     
-        
-    <h1>Fyll inn plz</h1>
-    <br>
-    <form>
-    <p>Dyronalia</p>
-    
-        <label for="fname">Fornavn:</label>
-        <br>
-        <input type="text" id="fornavn" name="fornavn">
-        <br>
-        <label for="lname">Etternavn:</label>
-        <br>
-        <input type="text" id="etternavn" name="etternavn">
+    <main class="wrapper">
 
+        <Header>
+            <h1>Fyll inn plz</h1>
+        </Header>
 
-    <p>Hvilken art tilhører du</p>
+        <form>
+        <fieldset>
+            <Legend>Personalia</Legend>
+            <label for="fornavn">Fornavn:</label>
+            <br>
+            <input type="text" id="fornavn" name="fornavn" placeholder="Bjørn">
+            <br>
+            <label for="lname">Etternavn:</label>
+            <br>
+            <input type="text" id="etternavn" name="etternavn" placeholder="Bjørnesen">
+            <br>
+            <label for="adresse">Adresse (hvis noen):</label>
+            <br>
+            <input type="text" id="adresse" name="adresse" placeholder="Skogsveien 2">
+        </fieldset>
 
-  
-        <input type="radio" id="html" name="art" value="elg">
-        <label for="html">Elg</label>
-        <br>
-        <input type="radio" id="bjørn" name="art" value="bjørn">
-        <label for="bjørn">Bjørn</label>
-        <br>
-        <input type="radio" id="javascript" name="art" value="ulv">
-        <label for="ulv">Ulv</label>
-        <br>
-        <input type="radio" id="mindre" name="art" value="midre" disabled>
-        <label for="mindre">Mindre viktig art</label>
-    </form>
+        <fieldset>
+            <legend>Hvilken art tilhører du</legend> 
+            <input type="radio" id="html" name="art" value="elg">
+            <label for="html">Elg</label>
+            <br>
+            <input type="radio" id="bjørn" name="art" value="bjørn">
+            <label for="bjørn">Bjørn</label>
+            <br>
+            <input type="radio" id="javascript" name="art" value="ulv">
+            <label for="ulv">Ulv</label>
+            <br>
+            <input type="radio" id="mindre" name="art" value="midre" disabled>
+            <label for="mindre">Mindre viktig art</label>
+        </fieldset>
 
+        <fieldset>
+            <legend>Velg din kjernesak</legend>
+            <select id="kjerne" name="kjerne">
+              <option value="kongler">Kongler</option>
+              <option value="sopp">Sopp</option>
+              <option value="bark">Bark</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> 
+                Kontroller at informasjonen er korrekt før du sender inn
+            </legend>
+            <input type="button" value="Send til Skogen">
+        </fieldset>
+
+        </form>
+    </main>
 </body>
 </html>

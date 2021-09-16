@@ -1,26 +1,14 @@
 html {
-    
     font-family: 'Merriweather',monospace, serif;
     line-height: 2;
-}
-
-h1, h2, h3 {
-    /* font-family: 'Merriweather Sans', sans-serif; */
-
 }
 
 h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--text-light);
 }
 h2 {
     font-size: 2rem;
-    color: var(--text-light);
-}
-
-h3 {
-    
 }
 
 .wrapper {
@@ -29,69 +17,34 @@ h3 {
 }
 
 .navigation {
-    color: var(--text-light);
-    padding: 0.5rem;
+    padding: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2em;
 }
 
-  .nav-logo {
-    /* display: inline-block; */
-    /* position: relative; */
-    /* max-width: 100%; */
-    /* height: 15vh;  */
-    /* padding: 0.5rem; */
-    /* grid-column: 1/2; */
-    /* height: 50px;
-    width: 50px;
-    background: cornsilk; */
-}
-    
+
 .nav-logo img {
-    
-    /* display: inline-block; */
-    /* position: relative; */
-    max-width: 100%;
-    height: 10vh;
-    /* margin: auto; */
-}
-
-
-.nav-menu {
-    color: var(--text-light);
-    /* display: flex;
-    justify-content: flex-end; */
-    /* display: inline-block; */
-    /* position: absolute; */
-    /* width: 50vw; */
-    /* grid-column: 2/4;
-    align-content: stretch; */
+    height: 75px;
 }
 
 .nav-menu li {
-    border: medium solid white;
     display: inline-block;
-    /* color: var(--text-light); */
-    /* padding: 0.5rem; */
     margin-right: 3rem;
 }
 
 .nav-menu a:hover {
-    
-    border: medium solid lightgrey;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
     text-decoration: none;
 }
 
 .nav-menu li:last-of-type {
-    border: medium solid maroon;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    border: medium solid var(--clr-green);
+    border-radius: 0.5em;
+    padding: 0.5em;
 }
 
-.header {
+.hero {
     position: relative;
     height: 75vh;
     background-image: url(../assets/nature-red.jpg);
@@ -100,10 +53,10 @@ h3 {
     text-align: center;
 }
 
-.header-text {
+.hero-text {
+    color: var(--text-light);
     background: rgba(0, 0, 0, 0.700);
-    min-width: 320px;
-    /* max-width: 370px; */
+    min-width: 325px;
     position: absolute;
     height: 50%;
     width: 45%;
@@ -111,82 +64,60 @@ h3 {
     right: 10%;
 }
 
-/* .header h1 {
-    /* position: relative;
-    top: 10%;
-    right: 10%;
- }
-
- .header h2 { */
-    /* position: relative;
-    top: 10%;
-    left: 10%; 
-} */
-
 .leader {
     margin: 10vh auto;
     height: 50vh;
     width: 80%;
     display: flex;
-    flex-flow: row;
-    column-gap: 3rem;
+    flex-direction: row;
+    column-gap: 2em;
     justify-content: space-around;
     align-items: center;
 }
 
 .leader-text {
-    /* border: medium solid black; */
     height: 50%;
-    border-radius: 1rem;
-    color: black;
-    padding: 1rem;
-    /* flex: 1 1 30%; */
-}
-
-.leader-text h2 {
-    color: black;
+    padding: 1em;
 }
 
 .leader-image {
-    size: 100% auto;
+    /* size: 100% auto; */
 }
 
 .leader img {
     max-width: 100%;
     min-width: 250px;
-    border-radius: 1rem;
+    border-radius: 5px;
 
 }
 
 .cards {
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
-}
-
-.card-items h2 {
-    /* display: inline-block; */
-    background: rgba(0, 0, 0, 0.5);
-    
 }
 
 .card-header {
     grid-column: 1 / 8;
     grid-row: 1 / 2;
     text-align: center;
-    color: #000000;
 }
 
 .card-items {
     text-align: center;
-    font-family: 'Merriweather';
     font-size: 2rem;
     color: var(--text-light);
-    border: solid medium rgb(0, 128, 0);
-    border-radius: 1rem;
+    border: solid medium var(--clr-green);
+    border-radius: 0.3em;
     height: 25vh;
     margin: 1vw;
     padding: 1rem;
+    
+}
+
+.card-items h3 {
+    background: rgba(0, 0, 0, 0.5);
     
 }
 
@@ -209,82 +140,64 @@ h3 {
     background-size: cover;
 }
 
-.issues {
+.saker {
+    margin: 0 1em;
     display: flex; 
     flex-direction: row;
-    gap: 2rem;
-    margin: 0 1rem;
-    /* color: black; */
     justify-content: space-between;
+    gap: 2em;
 }
 
-.issues h2 {
-    color: black;
+.saker h2 {
     text-align: center;
+}
+
+.nyhetsbrev {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 50vh;
+    background-image: url(../assets/);
+    background-attachment: cover;
 }
 
 
 
 .footer {
+
     /* background-image:url(../assets/nature-green.jpg); */
     /* background-size: cover;
     background-attachment: fixed; */
-    background:rgb(0, 128, 0);
-    padding: 3rem;
-    margin-top: 2rem;
-    height: min-content;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background:var(--clr-green);
+    padding: 3em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
-    
-    
 }
 
 .feet {
-    height: 90%;
-    color: var(--text-dark);
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     display: flex;
     flex-direction: column;
-
 }
 
+/* 
 .left-foot {
-    grid-column: 1 / 2;
 }
 
 .middle-foot {
-    grid-column: 2 / 3;
 }
 
-.right-foot {
-    grid-column: 3 / 4;
-    display: flex;
-    
-}
-
-.right-foot img {
-    width: 3rem;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* padding: 0.2rem; */
-}
-
-/* .bottom-logo {
-    margin: 2rem auto;
+.right-foot {    
 } */
 
-.agenda {
-    background-image: url(../assets/cork-board.png);
+.right-foot img {
+    width: 2em;
 }
 
-.level-up {
-    position: absolute;
-    bottom: -20px;
-    margin: 0 auto;
-    left: 3%;
-    width: 4vw;
-    
-    
-}
+

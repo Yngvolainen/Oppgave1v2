@@ -12,16 +12,16 @@
 <body>
     <div class="wrapper">
 
-        <nav id="top" class="navigation">
+        <nav id="top">
             <div class="nav-logo">
-                <img src="assets/leaf-logo.png" alt="Logo">
+                <a href="#hvor"><img src="assets/leaf-logo.png" alt="Logo"></a>
             </div>
             <div class="nav-menu">
                 <ul>
                     <li><a href="#hvem"><h3>Hvem</h3></a></li>
                     <li><a href="#hva"><h3>Hva</h3></a></li>
                     <li><a href="#hvor"><h3>Hvor</h3></a></li>
-                    <li><a href="forms.html" target="_blank"><h3>Meld deg inn</h3></a></li>
+                    <li><a href="forms.html"><h3>Meld deg inn</h3></a></li>
                 </ul>
             </div>  
         </nav>
@@ -79,21 +79,25 @@
 
         <section>
             <div class="nyhetsbrev">
-                <h2>Meld deg på nyhetsbrevet vårt for å få oppdatering om Skogen</h2>
-
+                <h3>Meld deg på nyhetsbrevet vårt for å få oppdateringer om Skogpolitikk</h3>
+                <form action="nyhetsbrev.html">
+                    <legend> <b> Nyhetsbrevet<br>"løv"</b></legend>
+                    <input type="text" name="epost" id="epost" placeholder="E-postadresse">
+                    <input class="btn" type="submit" value="Meld meg på!" >
+                </form>
             </div>
         </section>
 
         <footer id="hvor" class="footer">     
             <div class="feet left-foot"> 
                 <h3>Lenker</h3>
+                <div class="nav-logo">
+                    <a href="#top"><img src="assets/leaf-logo.png" alt="Logo"></a>
+                </div>  
                 <a href="#hvem"><p>Hvem</p></a>
                 <a href="#hva"><p>Hva</p></a>
                 <a href="#hvor"><p>Hvor</p></a>
                 <a href="forms.html" target="_blank"><h4>Meld deg inn i Skogpartiet</h4></a>
-                <div class="nav-logo">
-                    <img src="assets/leaf-logo.png" alt="Logo">
-                </div>  
             </div>
 
             <div class="feet middle-foot">
@@ -105,10 +109,10 @@
             
             <div class="feet right-foot">
                 <h3>Følg oss</h3>
-                <a href="http://old.reddit.com" target="_blank"><img src="assets/reddit-icon.svg" alt="reddit">Reddit</a>
+                <a href="https://old.reddit.com/r/woodworking/" target="_blank"><img src="assets/reddit-icon.svg" alt="reddit">Reddit</a>
                 <a href="http://facebook.com" target="_blank"><img src="assets/facebook-icon.svg" alt="facebook">Facebook</a>
                 <a href="http://twitter.com" target="_blank"><img src="assets/twitter-icon.svg" alt="twitter">Twitter</a>
-                <a href="http://youtube.com" target="_blank"><img src="assets/youtube-icon.svg" alt="youtube">YouTube</a>
+                <a href="https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA" target="_blank"><img src="assets/youtube-icon.svg" alt="youtube">YouTube</a>
                 
             </div>
         </footer>

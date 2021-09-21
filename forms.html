@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/formstyle.css">
     <title>Meld deg inn i Skogpartiet</title>
 </head>
 <body>
-    <div class="left">
-        <!-- <img src="/assets/nature-red.jpg" alt=""> -->
-    </div>
-    <div class="right">
-        <!-- <img src="/assets/nature-red.jpg" alt=""> -->
-    </div>
-    
+
     <main class="wrapper">
-
-        <Header class="agenda">
-            <h1>Bli med i kampen for skog!</h1>
-        </Header>
-
-        <form>
-        <fieldset>
-            <Legend>Personalia</Legend>
-            <label for="fornavn">Fornavn:</label>
-            <br>
-            <input type="text" id="fornavn" name="fornavn" placeholder="Bjørn">
-            <br>
-            <label for="lname">Etternavn:</label>
-            <br>
-            <input type="text" id="etternavn" name="etternavn" placeholder="Bjørnesen">
-            <br>
-            <label for="adresse">Adresse (hvis noen):</label>
-            <br>
-            <input type="text" id="adresse" name="adresse" placeholder="Skogsveien 2">
-        </fieldset>
-
-        <fieldset>
-            <legend>Hvilken art tilhører du</legend> 
-            <input type="radio" id="html" name="art" value="elg">
-            <label for="html">Elg</label>
-            <br>
-            <input type="radio" id="bjørn" name="art" value="bjørn">
-            <label for="bjørn">Bjørn</label>
-            <br>
-            <input type="radio" id="javascript" name="art" value="ulv">
-            <label for="ulv">Ulv</label>
-            <br>
-            <input type="radio" id="mindre" name="art" value="midre" disabled>
-            <label for="mindre">Mindre viktig art</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Velg din kjernesak</legend>
-            <select id="kjerne" name="kjerne">
-              <option value="kongler">Kongler</option>
-              <option value="sopp">Sopp</option>
-              <option value="bark">Bark</option>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend> 
-                Kontroller at informasjonen er korrekt før du sender inn
-            </legend>
-            <input type="button" value="Send til Skogen">
-        </fieldset>
-
-        </form>
-      
         
-        <div class="level-up">
-            <a href="/index.html"><img src="assets/level-up.svg" alt=""></a>
-        </div>
-    </main>
+        <Header>
+           <h1>Bli med i kampen for skog!<span><img src="/assets/rejected.png" alt="Du får ikke bli med uansett, haha"></span></h1>
+         </Header>
 
+        <form action="/feedback.html" method="GET">
+            <fieldset>
+                <Legend>Personalia</Legend>
+                <ul  class="personalia">
+                    <li>
+                        <label for="fornavn">Fornavn:</label>
+                        <input type="text" id="fornavn" name="fornavn" placeholder="Bjørn">
+                    </li>
+                    <li>
+                        <label for="lname">Etternavn:</label>
+                        <input type="text" id="etternavn" name="etternavn" placeholder="Bjørnesen">
+                    </li>
+                    <li>
+                        <label for="adresse">Adresse (hvis noen):</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="Skogsveien 2">
+                    </li>
+                </ul>
+            </fieldset>
 
+            <fieldset>
+                <legend>Hvilken art tilhører du</legend> 
+                <ul>
+                    <li>
+                        <input type="radio" id="elg" name="art" value="elg">
+                        <label for="html">Elg</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="bjørn" name="art" value="bjørn">
+                        <label for="bjørn">Bjørn</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="ulv" name="art" value="ulv">
+                        <label for="ulv">Ulv</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="mindre" name="art" value="midre">
+                        <label for="mindre">Mindre viktig art</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="core-issues">
+                <legend>Velg din kjernesak</legend>
+                <select class="form-button" id="kjerne" name="kjerne">
+                <option value="kongler">Kongler</option>
+                <option value="sopp">Sopp</option>
+                <option value="bark">Bark</option>
+                <option value="bark">Alle!</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="opinions">
+                <legend>Kort om hva du liker med skog</legend>
+                <input type="text" placeholder="F.eks at den inneholder masse mose">
+                <!-- <textarea name="opinion" id="opinion" cols="" rows="5">
+                    F.eks at du liker at den er full av mose
+                </textarea> -->
+            </fieldset>
+
+            <fieldset class="sub-area">
+                <legend> 
+                    Kontroller at informasjonen er korrekt før du sender inn
+                </legend>
+                <input class="form-button" type="submit" value="Send til Skogen">
+            </fieldset>
+
+            </form>
+             
+            <div class="level-up">
+                <a href="/index.html"><img src="assets/level-up.svg" alt="Gå til forsiden"></a>
+            </div>
+        </main>
 </body>
 </html>

@@ -1,5 +1,5 @@
 html {
-    font-family: 'Merriweather',monospace, serif;
+    font-family: 'Merriweather', serif;
     line-height: 2;
 }
 
@@ -16,7 +16,7 @@ h2 {
     margin: 0 auto;
 }
 
-.navigation {
+nav {
     padding: 0.5em;
     display: flex;
     align-items: center;
@@ -80,9 +80,9 @@ h2 {
     padding: 1em;
 }
 
-.leader-image {
-    /* size: 100% auto; */
-}
+/* .leader-image {
+    size: 100% auto;
+} */
 
 .leader img {
     max-width: 100%;
@@ -111,8 +111,7 @@ h2 {
     border: solid medium var(--clr-green);
     border-radius: 0.3em;
     height: 25vh;
-    margin: 1vw;
-    padding: 1rem;
+    /* padding: 1rem; */
     
 }
 
@@ -146,6 +145,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     gap: 2em;
+    line-height: 1.7;
 }
 
 .saker h2 {
@@ -154,26 +154,39 @@ h2 {
 
 .nyhetsbrev {
     margin-top: 3rem;
+    padding: 2em;
     font-size: 1.2rem;
     text-align: center;
-    height: 50vh;
-    background-image: url(../assets/);
-    background-attachment: cover;
+    height: min-content; 
+    background-image: url(../assets/nature-green-small.jpg);
+    background-position: center;
+}
+
+.nyhetsbrev h3 {
+    color: var(--text-light);
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2rem;
+}
+
+.nyhetsbrev input {
+    font-size: 1.2rem;
+    padding: 0.5em;
+}
+
+.nyhetsbrev .btn {
+    background: var(--clr-green);
+    color: var(--text-light);
 }
 
 
 
 .footer {
-
-    /* background-image:url(../assets/nature-green.jpg); */
-    /* background-size: cover;
-    background-attachment: fixed; */
     width: 100vw;
     position: absolute;
     left: 0;
-    background:var(--clr-green);
+    background: var(--clr-green);
     padding: 3em;
-    margin-top: 2em;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;

@@ -1,47 +1,130 @@
 body {
+    font-family: 'Merriweather', serif;
     font-size: larger;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    background-image: url(../assets/nature-green.jpg);
+    background-size: cover;
+    
 }
 
 header {
     text-align: center;
 }
 
+header h1 {
+    padding: 0 0.5rem 2rem;
+    color: var(--text-dark);
+}
+
+header img {
+    height: 3em;
+    position: absolute;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
 fieldset {
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    border: none;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 0;
 }
 
 legend {
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+form ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+form ul li input {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    /* width: 100%; */
 }
 
 .wrapper{
-    grid-column: 2 / 3;
-    margin: 2rem auto; 
+    width: 45vw;
+    height: 100%;
+    margin: 0 auto; 
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
 }
 
-.agenda {
-    background-image: url(../assets/cork-board.png);
+.personalia {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
 }
 
-.left {
-    grid-column: 1 / 2;
-    /* background-image: url(../assets/nature-red.jpg); */
-    /* background-attachment: cover; */
-    
-    
+.personalia input {
+    border: medium solid var(--clr-green);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font: 1.3rem serif;
 }
 
-/* .left img {
-    width: 100%;
+.core-issues {
+    text-align: center;
+}
+
+.opinions {
+    text-align: center;
+}
+
+
+.opinions input {
+    width: 90%;
+    margin: 0 auto;
+    border: medium solid var(--clr-green);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font: 1.3rem serif;
+}
+
+.sub-area {
+    text-align: center;
+}
+
+.form-button {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    background: var(--clr-green);
+    padding: 0.5em;
+    border-radius: 0.4em;
+}
+
+
+/* .personalia:nth-child(1) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.personalia:nth-child(2) {
+    margin-right: 0;
+    margin-left: auto;
 } */
 
-.right {
-    grid-column: 3 / 4;
-    background-image: url(../assets/nature-green.jpg);
-    
-    
+
+
+
+.feil {
+    position: absolute;
+    top: -180px;   
 }
 
 .level-up {
@@ -50,6 +133,4 @@ legend {
     margin: 0 auto;
     left: 3%;
     width: 5rem;
-    
-    
 }
